@@ -5,6 +5,8 @@
     --header-links-color:#E5E7EB;
     --header-title-color:#F9FAF8;
     --header-backgroung-color:#1F2937;
+    --blue-color:#3882f6;
+    --third-section-background-color:#E5E7EB;
 }
 *{
     margin: 0;
@@ -16,10 +18,7 @@ body{ /* não tem necessidaade? */
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
-.cards img {
-    width: 100px;
-    height: 100px;
-  }
+
 /* ---------------------HEADER ----------- */
 header{
     justify-content: space-around;
@@ -32,7 +31,7 @@ header{
 }
 header .logo{
 font-size: 24px;
-font-weight: bolder;
+font-weight: bold;
 }
 .header-links ul{
     display: flex;
@@ -52,15 +51,17 @@ font-weight: bolder;
     gap: 30px;
     background-color: var(--header-backgroung-color);
     justify-content: center;
-    padding: 50px;
+    padding: 50px 50px 100px 50px;
+    flex-wrap: wrap;
 }
 .first-sec .title{
     font-size: 48px;
+    font-weight: 800;
     color: var(--header-logo-color);
 }
 aside{
-max-width: 500px;
-flex: 1;
+    max-width: 400px;
+    flex: 1;
 }
 aside .presentation{
     color: var(--header-links-color);
@@ -70,13 +71,81 @@ article{
     max-width: fit-content;
 }
 .signup{
-    background-color: #3882f6;
+    background-color: var(--blue-color);
     border-style: none;
     padding: 10px 25px 10px 25px;
-    border-radius: 10%;
+    border-radius: 5px;
     margin-top: 10px;
+    color: var(--header-logo-color);
+    font-weight: 600;
+}
+
+/* ------------------------------ */
+/* ---------------------SECOND-SECtion ----------- */
+.sec-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.title-sec-section{
+    color: #1f2937;
+    padding: 40px;
+    font-size: 36px;
+    font-weight: 800;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    gap: 40px;    
+    flex-wrap: wrap;
+}
+.cards{
+    width: 145px;
+    height: max-content;
+    text-align: center;
+}
+.cards img{
+    border: 2.5px solid #3882f6;
+    border-radius: 15px;
+    width: 130px;
+    height: 130px;
+}
+/* ------------------------------------------------- */
+/* ------------------------ THIRD SECTION ---------- */
+.third-section{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-color: var(--third-section-background-color);
+    padding: 40px;
+}
+.third-section .text{
+    font-size: 36px;
+    font-style: italic;
+    max-width: 60%;
+}
+.third-section span{
+    float: right;
+    color:black;
+    font-style: none;
+    font-size: 16px;
 }
 
 
 
-/* ------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------*/
