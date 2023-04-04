@@ -48,6 +48,7 @@ font-weight: bold;
 /* ---------------------FIRST-SEC ----------- */
 .first-sec{
     display: flex;
+    flex: 1;
     gap: 30px;
     background-color: var(--header-backgroung-color);
     justify-content: center;
@@ -84,6 +85,7 @@ article{
 /* ---------------------SECOND-SECtion ----------- */
 .sec-section{
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px;
@@ -114,38 +116,52 @@ article{
 /* ------------------------------------------------- */
 /* ------------------------ THIRD SECTION ---------- */
 .third-section{
+    flex: 1;
     display: flex;
-    align-items:center;
     flex-direction: column;
+    align-items:center;
+    justify-content: center;
     background-color: var(--third-section-background-color);
-    padding: 40px;
+    padding: 70px;
 }
 .third-section .text{
     font-size: 36px;
     font-style: italic;
     max-width: 60%;
 }
-.third-section span{
-    float: right;
-    color:black;
+.third-section .author{
+    color:#1f2937;
     font-style: none;
-    font-size: 16px;
+    font-size:16px;
+    font-weight: 800;
+}
+/* -------------------------------------------------*/
+/*----------------------- FOURTH SECTION -----------*/
+.fourth-section{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    max-width: 100%;
+}
+.fourth-section .signup-bottom{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--blue-color);
+    padding: 50px 80px 50px 80px;
+}
+.fourth-section .text{
+    color: var(--header-logo-color);
+}
+.fourth-section .text p{
+    font-weight: 800;
+    font-size: 24px;
+
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------------------------*/
+/*-------------------------------------------------*/
+footer{
+    background-color: var(--header-backgroung-color);
+}
