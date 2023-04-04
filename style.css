@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+:root{
+    --header-logo-color:#F9FAF8;
+    --header-links-color:#E5E7EB;
+    --header-title-color:#F9FAF8;
+    --header-backgroung-color:#1F2937;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ /* não tem necessidaade? */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.cards img {
+    width: 100px;
+    height: 100px;
+  }
+/* ---------------------HEADER ----------- */
+header{
+    justify-content: space-around;
+    display: flex;
+    flex: 1;
+    background-color: var(--header-backgroung-color);
+    align-items: center;
+    color: var(--header-logo-color);
+    padding: 10px 10px 80px 10px;
+}
+header .logo{
+font-size: 24px;
+font-weight: bolder;
+}
+.header-links ul{
+    display: flex;
+    list-style: none;
+}
+.header-links ul a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--header-links-color);
+}
+/* ------------------------------ */
+
+/* ---------------------FIRST-SEC ----------- */
+.first-sec{
+    display: flex;
+    gap: 30px;
+    background-color: var(--header-backgroung-color);
+    justify-content: center;
+    padding: 50px;
+}
+.first-sec .title{
+    font-size: 48px;
+    color: var(--header-logo-color);
+}
+aside{
+max-width: 500px;
+flex: 1;
+}
+aside .presentation{
+    color: var(--header-links-color);
+}
+article{
+    flex: 1;
+    max-width: fit-content;
+}
+.signup{
+    background-color: #3882f6;
+    border-style: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10%;
+    margin-top: 10px;
+}
+
+
+
+/* ------------------------------ */
