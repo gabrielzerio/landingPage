@@ -18,7 +18,11 @@ body{ /* não tem necessidaade? */
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
-
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 /* ---------------------HEADER ----------- */
 header{
     justify-content: space-around;
@@ -158,8 +162,18 @@ article{
     font-size: 24px;
 
 }
-
-
+.signup-bottom .btnSignup{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: var(--blue-color);
+    border: solid var(--header-title-color);
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: var(--header-logo-color);
+    font-weight: 600;
+}
 
 /*-------------------------------------------------*/
 footer{
