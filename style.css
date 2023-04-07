@@ -15,6 +15,7 @@
 }
 body{ /* não tem necessidaade? */
     display: flex;
+    height: 100vh;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
@@ -52,7 +53,6 @@ font-weight: bold;
 /* ---------------------FIRST-SEC ----------- */
 .first-sec{
     display: flex;
-    flex: 1;
     gap: 30px;
     background-color: var(--header-backgroung-color);
     justify-content: center;
@@ -136,13 +136,12 @@ article{
 .third-section .author{
     color:#1f2937;
     font-style: none;
-    font-size:16px;
     font-weight: 800;
 }
 /* -------------------------------------------------*/
 /*----------------------- FOURTH SECTION -----------*/
 .fourth-section{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px;
@@ -150,7 +149,9 @@ article{
 }
 .fourth-section .signup-bottom{
     display: flex;
+    gap: 80px;
     justify-content: space-around;
+    align-items: center;
     background-color: var(--blue-color);
     padding: 50px 80px 50px 80px;
 }
@@ -163,9 +164,8 @@ article{
 
 }
 .signup-bottom .btnSignup{
-    display: flex;
+    display: block;
     flex-shrink: 0;
-    align-items: center;
     background-color: var(--blue-color);
     border: solid var(--header-title-color);
     padding: 10px 25px 10px 25px;
@@ -177,5 +177,10 @@ article{
 
 /*-------------------------------------------------*/
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     background-color: var(--header-backgroung-color);
+    padding: 30px;
 }
