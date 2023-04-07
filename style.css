@@ -120,23 +120,29 @@ article{
 /* ------------------------------------------------- */
 /* ------------------------ THIRD SECTION ---------- */
 .third-section{
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--third-section-background-color);
+}
+.message{
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    background-color: var(--third-section-background-color);
     padding: 70px;
+    width: 60%;
 }
 .third-section .text{
     font-size: 36px;
     font-style: italic;
-    max-width: 60%;
 }
 .third-section .author{
+    align-self: flex-end;
     color:#1f2937;
     font-style: none;
     font-weight: 800;
+    font-size: 26px;
 }
 /* -------------------------------------------------*/
 /*----------------------- FOURTH SECTION -----------*/
